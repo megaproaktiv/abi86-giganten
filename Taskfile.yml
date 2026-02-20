@@ -41,5 +41,5 @@ tasks:
     cmds:
       - |
         APP_ID=$(terraform output -raw amplify_app_id)
-        JOB_ID=$(aws amplify list-jobs --app-id $APP_ID --branch-name main --region us-east-1 --query 'jobSummaries[0].jobId' --output text)
-        aws amplify get-job --app-id $APP_ID --branch-name main --job-id $JOB_ID --region us-east-1
+        JOB_ID=$(aws amplify list-jobs --app-id $APP_ID --branch-name main --region eu-central-1 --query 'jobSummaries[0].jobId' --output text)
+        aws amplify get-job --app-id $APP_ID --branch-name main --job-id $JOB_ID --region eu-central-1
