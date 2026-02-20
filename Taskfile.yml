@@ -26,3 +26,11 @@ tasks:
       - git add .
       - git commit -m "Deploy website"
       - git push
+
+  deploy-infra:
+    desc: Deploy infrastructure to production
+    dir: infra
+    cmds:
+      - terraform validate
+      - terraform plan
+      - terraform apply
