@@ -1,0 +1,28 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  GREETING: Hello, World!
+
+include:
+  hugo: abi86-giganten.de/Taskfile.yml
+
+includes:
+  api:
+    taskfile: ./abi86-giganten.de/Taskfile.yml
+    dir: ./abi86-giganten.de
+
+tasks:
+  default:
+    cmds:
+      - task -l
+    silent: true
+
+  deploy:
+    desc: Deploy website to production
+    cmds:
+      - task: api:build
+      - git add .
+      - git commit -m "Deploy website"
+      - git push

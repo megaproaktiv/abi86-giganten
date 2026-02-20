@@ -1,4 +1,8 @@
 baseURL = 'https://abi86-giganten.de/'
 languageCode = 'de'
-title = 'ABI86 Giganten'
+title = 'ABI86 Giganten - Abitur Jahrgangstreffen 1986 Andreanum Hildesheim'
 theme = 'blowfish'
+
+[languages.de]
+  languageName = 'Deutsch'
+  weight = 1

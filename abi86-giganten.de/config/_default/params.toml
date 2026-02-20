@@ -1,0 +1,15 @@
+mainSections = ["posts"]
+defaultBackgroundImage = "/img/giganten-FF1A7Q8B.jpg"
+
+description = "Abitur Jahrgangstreffen 1986 vom Gymnasium Andreanum Hildesheim. 40 Jahre Abitur - Treffen der Giganten."
+
+[homepage]
+  layout = "background"
+  showRecent = true
+
+[[params.customCSS]]
+  href = "css/custom.css"
+
+[author]
+  name = "ABI86 Giganten"
+  email = "info@abi86-giganten.de"
