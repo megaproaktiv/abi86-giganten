@@ -1,7 +1,28 @@
+resource "aws_iam_role" "amplify" {
+  name = "amplify-abi86-giganten"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [{
+      Action = "sts:AssumeRole"
+      Effect = "Allow"
+      Principal = {
+        Service = "amplify.amazonaws.com"
+      }
+    }]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "amplify_backend" {
+  role       = aws_iam_role.amplify.name
+  policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess-Amplify"
+}
+
 resource "aws_amplify_app" "hugo_site" {
   name         = "abi86-giganten"
   repository   = "https://github.com/megaproaktiv/abi86-giganten"
   access_token = var.github_token
+  iam_service_role_arn = aws_iam_role.amplify.arn
 
   build_spec = <<-EOT
     version: 1

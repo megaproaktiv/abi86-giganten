@@ -30,3 +30,5 @@ Vereinbarungen -  der Ticketpreis enthält die folgenden Leistungen:
 [Anmeldung über Eventfrog](https://eventfrog.de/de/p/diverses/40-jahre-abitur-eine-private-feier-der-giganten-7419396281410262591.html)
 
 Die Location: [LitteraNova](https://www.marcovegas.de/)
+
+Euer Orga-Team, Catrin, Sven R. und Gernot
