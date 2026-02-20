@@ -1,0 +1,16 @@
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task -l
+  serve:
+    desc: Start Hugo development server
+    cmds:
+      - hugo server
+
+  build:
+    desc: Build site to ../public
+    cmds:
+      - mkdir -p ../public
+      - hugo --destination ../public

@@ -1,0 +1,4 @@
+[submodule "abi86-giganten.de/themes/blowfish"]
+	path = abi86-giganten.de/themes/blowfish
+	url = https://github.com/nunocoracao/blowfish.git
+	branch = main

@@ -1,0 +1,4 @@
+baseURL = 'https://abi86-giganten.de/'
+languageCode = 'de'
+title = 'ABI86 Giganten'
+theme = 'blowfish'
