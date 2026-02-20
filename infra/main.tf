@@ -27,6 +27,8 @@ resource "aws_amplify_app" "hugo_site" {
   access_token = var.github_token
   iam_service_role_arn = aws_iam_role.amplify.arn
 
+  depends_on = [aws_iam_role_policy_attachment.amplify_backend]
+
   build_spec = <<-EOT
     version: 1
     frontend:
